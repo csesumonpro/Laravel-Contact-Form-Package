@@ -1,0 +1,13 @@
+{
+    "name": "csesumonpro/contact",
+    "description": "It's Contact From Package when user submit a contact message from your web site frontend you will manage it from Backend(Admin panel) with send contact message of your mail(Admin Mail). Replay their message from admin panel.",
+    "type": "library",
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "csesumonpro\\contact\\": "src/"
+        }
+    }
+}

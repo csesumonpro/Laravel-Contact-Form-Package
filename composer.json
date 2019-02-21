@@ -9,5 +9,12 @@
         "psr-4": {
             "csesumonpro\\contact\\": "src/"
         }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "csesumonpro\\contact\\ContactServiceProvider"
+            ]
+        }
     }
 }

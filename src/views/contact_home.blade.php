@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="csrf-token" content="{{ csrf_token() }}">
+    <meta name="author" content="csesumonpro">
     <title>Contact Form</title>
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
@@ -82,6 +83,9 @@
                     <div class="contact-form">
                         <h2 class="text-success">
                           {{Session::get('message_success')}}
+                        </h2>
+                        <h2 class="text-danger">
+                            {{Session::get('message_error')}}
                         </h2>
                         <div class="form-group">
                             <label class="control-label col-sm-2" for="fname"> Name:</label>

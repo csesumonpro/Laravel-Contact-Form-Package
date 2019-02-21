@@ -9,6 +9,7 @@ use csesumonpro\contact\Models\ContactForm;
 use Illuminate\Support\Facades\Mail;
 
 
+
 class ContactController extends Controller
 {
     public function index()
@@ -24,8 +25,14 @@ class ContactController extends Controller
             'message' => 'required|min:10|max:999'
         ]);
 
-        Mail::to(config('contact.send_mail_to'))->send(new ContactMailable($request));
-        ContactForm::create($request->all());
+        if (env('MAIL_USERNAME')){
+            ContactForm::create($request->all());
+            Mail::to(config('contact.send_mail_to'))->send(new ContactMailable($request));
+        }else{
+            return back()->with('message_error', 'Main not configured Successfully');
+        }
+
+
         return back()->with('message_success', 'Message Send Successfully');
     }
 }

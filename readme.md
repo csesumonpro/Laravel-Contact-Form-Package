@@ -37,7 +37,7 @@ php artisan vendor:publish --provider="csesumonpro\contact\ContactServiceProvide
 ## Usage
 ### IMPORTANT NOTE!
 Must Be configured your mail in your app env file for send email from contact form!!.
-## Mail Setup
+## Mails
 ##### Before Google Mail Configuration must be use a mail which mail not two factor authorized.
 Must need for send a mail from localhost 
 Allow less secure option enable [Less Secure Apps](https://myaccount.google.com/lesssecureapps). 
@@ -57,13 +57,13 @@ MAIL_ENCRYPTION=tls
 ```
 OR configure Mailtrap mail, when use live server configure your mail using sever crediential
 ```   
-##Admin Mail Setup
+##AdminMails
 ```blade
 Go to your project config folder then contact.php 
 Change your admin mail(Contact message received mail) from contact.php 
 
 ```
-##View Change
+##ViewChange
 ```blade
 If you want to change your contact form style go to resource>views>csesumonpro>contact>contact then show blade file change your design what are you want..
 ```

@@ -15,7 +15,9 @@ class ContactServiceProvider extends ServiceProvider
         );
         $this->publishes([
             __DIR__.'/config/contact.php' => config_path('contact.php'),
+            __DIR__.'/views' => resource_path('views/csesumonpro/contact'),
         ]);
+
     }
     public function register()
     {

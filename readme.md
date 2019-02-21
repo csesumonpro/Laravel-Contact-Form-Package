@@ -35,6 +35,10 @@ php artisan vendor:publish --provider="csesumonpro\contact\ContactServiceProvide
 
 
 ## Usage
+Run this command 
+```php
+ php artisan migrate
+```
 ### IMPORTANT NOTE!
 Must Be configured your mail in your app env file for send email from contact form!!.
 ## Mails

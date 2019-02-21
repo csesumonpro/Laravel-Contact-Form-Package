@@ -29,7 +29,7 @@ class ContactController extends Controller
             ContactForm::create($request->all());
             Mail::to(config('contact.send_mail_to'))->send(new ContactMailable($request));
         }else{
-            return back()->with('message_error', 'Main not configured Successfully');
+            return back()->with('message_error', 'Mail not configured Successfully');
         }
 
 

@@ -74,7 +74,7 @@ Route Action
    <a href="{{route('contact.form')}}">Contact</a> 
 ```
 
-Contact Form:
+##Contact Form:
 ![Preview](https://user-images.githubusercontent.com/29582239/53131105-19756000-3596-11e9-95c8-195727820942.PNG)
 
 ## Reference

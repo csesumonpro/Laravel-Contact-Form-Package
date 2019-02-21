@@ -57,13 +57,13 @@ MAIL_ENCRYPTION=tls
 ```
 OR configure Mailtrap mail, when use live server configure your mail using sever crediential
 ```   
-##AdminMails
+##Adminmails
 ```blade
 Go to your project config folder then contact.php 
 Change your admin mail(Contact message received mail) from contact.php 
 
 ```
-##ViewChange
+##Viewchange
 ```blade
 If you want to change your contact form style go to resource>views>csesumonpro>contact>contact then show blade file change your design what are you want..
 ```

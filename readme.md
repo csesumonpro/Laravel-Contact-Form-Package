@@ -57,24 +57,24 @@ MAIL_ENCRYPTION=tls
 ```
 OR configure Mailtrap mail, when use live server configure your mail using sever crediential
 ```   
-##Adminmails
+## Adminmails
 ```blade
 Go to your project config folder then contact.php 
 Change your admin mail(Contact message received mail) from contact.php 
 
 ```
-##Viewchange
+## Viewchange
 ```blade
 If you want to change your contact form style go to resource>views>csesumonpro>contact>contact then show blade file change your design what are you want..
 ```
-##Route 
+## Route 
 Route Action 
 ```php
    Just use this route for display contct form anywhere 
    <a href="{{route('contact.form')}}">Contact</a> 
 ```
 
-##Contact Form:
+## Contact Form:
 ![Preview](https://user-images.githubusercontent.com/29582239/53131105-19756000-3596-11e9-95c8-195727820942.PNG)
 
 ## Reference
